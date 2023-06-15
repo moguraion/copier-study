@@ -4,3 +4,31 @@ project_name:
   type: str
   help: Type project name
 
+project_description:
+  type: str
+  help: Short description
+
+python_version:
+  type: str
+  help: Python version
+  default: ^3.10
+
+author_fullname:
+  type: str
+  help: Your full name (e.g. Taro Suzuki)
+  default: Your Name
+
+author_email:
+  type: str
+  help: Your email (e.g. taro.suzuki@email.com)
+  default: you@example.com
+
+python_package_distribution_name:
+  type: str
+  help: Your Python package distribution name (for `pip install NAME`)
+  default: "{{ project_name|lower|replace('_', '-')|replace(' ', '-') }}"
+
+python_package_import_name:
+  type: str
+  help: Your Python package import name (for `import NAME` in Python code)
+  default: "{{ project_name|lower|replace('-', '_')|replace(' ', '_') }}"
