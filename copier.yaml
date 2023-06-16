@@ -4,6 +4,11 @@ project_name:
   type: str
   help: Type project name
 
+project_version:
+  type: str
+  help: Version of project
+  default: "0.1.0"
+
 project_description:
   type: str
   help: Short description

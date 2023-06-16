@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "{{ project_name }}"
-version = "0.1.0"
+version = "{{ project_version }}"
 description = "{{ project_description }}"
 authors = ["{{ author_fullname }} <{{ author_email }}>"]
 readme = "README.md"
 packages = [{include = "{{ project_name }}", from = "src"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "{{ python_version }}"
 
 [tool.poetry.group.dev.dependencies]
 copier = "^8.0.0"
