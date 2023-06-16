@@ -13,6 +13,7 @@ copier = "^8.0.0"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.3.3"
+mkdocs-material = "^9.1.16"
 
 [build-system]
 requires = ["poetry-core"]
