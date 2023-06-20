@@ -9,34 +9,33 @@ project_version:
   type: str
   help: Version of project
   default: 0.1.0
-  placeholder: 0.1.0
 
 project_description:
   type: str
   help: Short description
-  placeholder: "This is {{ project_name }} module"
+  default: "This is a {{ project_name }} package"
 
 python_version:
   type: str
   help: Python version
-  placeholder: ^3.10
+  default: ^3.10
 
 author_fullname:
   type: str
   help: Your full name (e.g. Taro Suzuki)
-  placeholder: Your Name
+  default: Your Name
 
 author_email:
   type: str
   help: Your email (e.g. taro.suzuki@email.com)
-  placeholder: you@example.com
+  default: you@example.com
 
 python_package_distribution_name:
   type: str
   help: Your Python package distribution name (for `pip install NAME`)
-  placeholder: "{{ project_name|lower|replace('_', '-')|replace(' ', '-') }}"
+  default: "{{ project_name|lower|replace('_', '-')|replace(' ', '-') }}"
 
 python_package_import_name:
   type: str
   help: Your Python package import name (for `import NAME` in Python code)
-  placeholder: "{{ project_name|lower|replace('-', '_')|replace(' ', '_') }}"
+  default: "{{ project_name|lower|replace('-', '_')|replace(' ', '_') }}"
