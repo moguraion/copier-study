@@ -1,16 +1,19 @@
-name: ci
+name: GitHub Pages Deploy
 on:
   push:
-    branches:
-      - main
-  pull_request:
     branches:
       - main
 
 permissions:
   contents: write
+
 jobs:
+  quality_check:
+    uses: ./.github/workflows/quality_check.yaml
+
   deploy:
+    needs:
+      - quality_check
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
