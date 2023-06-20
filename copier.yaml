@@ -3,37 +3,40 @@ _subdirectory: template
 project_name:
   type: str
   help: Type project name
+  validator: "{% if not (project_name|length) %} project_name is required {% endif %}"
 
 project_version:
   type: str
   help: Version of project
-  default: "0.1.0"
+  default: 0.1.0
+  placeholder: 0.1.0
 
 project_description:
   type: str
   help: Short description
+  placeholder: "This is {{ project_name }} module"
 
 python_version:
   type: str
   help: Python version
-  default: ^3.10
+  placeholder: ^3.10
 
 author_fullname:
   type: str
   help: Your full name (e.g. Taro Suzuki)
-  default: Your Name
+  placeholder: Your Name
 
 author_email:
   type: str
   help: Your email (e.g. taro.suzuki@email.com)
-  default: you@example.com
+  placeholder: you@example.com
 
 python_package_distribution_name:
   type: str
   help: Your Python package distribution name (for `pip install NAME`)
-  default: "{{ project_name|lower|replace('_', '-')|replace(' ', '-') }}"
+  placeholder: "{{ project_name|lower|replace('_', '-')|replace(' ', '-') }}"
 
 python_package_import_name:
   type: str
   help: Your Python package import name (for `import NAME` in Python code)
-  default: "{{ project_name|lower|replace('-', '_')|replace(' ', '_') }}"
+  placeholder: "{{ project_name|lower|replace('-', '_')|replace(' ', '_') }}"
