@@ -40,3 +40,4 @@ python_package_import_name:
 
 _tasks:
   - "git init"
+  - "poetry install"
