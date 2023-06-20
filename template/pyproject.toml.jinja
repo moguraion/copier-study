@@ -4,7 +4,7 @@ version = "{{ project_version }}"
 description = "{{ project_description }}"
 authors = ["{{ author_fullname }} <{{ author_email }}>"]
 readme = "README.md"
-packages = [{include = "{{ project_name }}", from = "src"}]
+packages = [{include = "{{ python_package_import_name }}", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "{{ python_version }}"
