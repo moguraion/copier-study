@@ -43,4 +43,5 @@ python_package_import_name:
 _migrations:
   - version: 0.3.0
     after:
+      - poetry lock --no-update
       - poetry install --sync
