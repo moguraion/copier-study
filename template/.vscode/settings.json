@@ -1,12 +1,13 @@
 {
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.lintOnSave": true,
+  "[python]": {
     "python.formatting.provider": "black",
     "python.linting.mypyEnabled": true,
-    "editor.formatOnSave": true,
+    "python.analysis.extraPaths": ["src"],
+    "python.autoComplete.extraPaths": ["src"],
     "editor.codeActionsOnSave": {
-        "source.organizeImports": true
+      "source.fixAll": true,
+      "source.organizeImports": true
     }
+  },
+  "editor.formatOnSave": true
 }
