@@ -41,6 +41,7 @@ python_package_import_name:
   default: "{{ project_name|lower|replace('-', '_')|replace(' ', '_') }}"
 
 _migrations:
-  - version: 0.3.0
+  - version: 0.3.2
     after:
+      - poetry lock --no-update
       - poetry install --sync
