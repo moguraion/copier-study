@@ -30,7 +30,10 @@ line-length = 119
 convention = "google"
 
 [tool.ruff.per-file-ignores]
-"__init__.py" = ["D104"]
+"__init__.py" = [
+    "D104",
+    "F401",
+]
 "tests/**/*.py" = [
     "S101",
 ]
