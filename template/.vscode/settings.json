@@ -1,13 +1,13 @@
 {
   "[python]": {
-    "python.formatting.provider": "black",
-    "python.linting.mypyEnabled": true,
-    "python.analysis.extraPaths": ["src"],
-    "python.autoComplete.extraPaths": ["src"],
     "editor.codeActionsOnSave": {
       "source.fixAll": true,
       "source.organizeImports": true
     }
   },
+  "python.formatting.provider": "black",
+  "python.linting.mypyEnabled": true,
+  "python.analysis.extraPaths": ["src"],
+  "python.autoComplete.extraPaths": ["src"],
   "editor.formatOnSave": true
 }
