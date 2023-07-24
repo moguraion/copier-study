@@ -7,7 +7,8 @@ A myself Python project template using [copier](https://github.com/copier-org/co
 ### Prerequisites
 
 - Python
-  You can choose any version when generating template. Using some Python version management tools like [pyenv](https://github.com/pyenv/pyenv) is recommended.
+
+    You can choose any version when generating template. Using some Python version management tools like [pyenv](https://github.com/pyenv/pyenv) is recommended.
 
 - [copier](https://github.com/copier-org/copier)
 
