@@ -14,7 +14,7 @@ A myself Python project template using [copier](https://github.com/copier-org/co
 
     Install copier in your python env as bellow.
 
-    ```console
+    ```sh
     pip install copier
     ```
 
@@ -22,13 +22,13 @@ A myself Python project template using [copier](https://github.com/copier-org/co
 
 1. Copy template.
 
-    ```console
+    ```sh
     copier https://github.com/moguraion/copier-study /path/to/destination
     ```
 
 2. Initializing template.
 
-    ```console
+    ```sh
     cd /path/to/destination
     make init
     ```
