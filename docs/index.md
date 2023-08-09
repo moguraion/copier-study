@@ -1,6 +1,6 @@
 # My Python Project Template
 
-A myself Python project template using [copier](https://github.com/copier-org/copier).
+A Python project template using [copier](https://github.com/copier-org/copier).
 
 ## How to Use
 
