@@ -1,0 +1,2 @@
+#!/bin/sh
+exec < /dev/tty && cz commit --dry-run --write-message-to-file $1

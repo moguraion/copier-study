@@ -24,3 +24,11 @@ repos:
       - id: commitizen
       - id: commitizen-branch
         stages: [push]
+
+  # - repo: local
+  #   hooks:
+  #     - id: commitizen
+  #       name: commitizen
+  #       language: script
+  #       entry: .pre-commit-hooks/prepare-commit-msg
+  #       stages: [prepare-commit-msg]
