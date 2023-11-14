@@ -1,17 +1,36 @@
-# Welcome to MkDocs
+# My Python Project Template
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+A Python project template using [copier](https://github.com/copier-org/copier).
 
-## Commands
+## How to Use
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+### Prerequisites
 
-## Project layout
+- Python
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+    You can choose any version when generating template. Using some Python version management tools like [pyenv](https://github.com/pyenv/pyenv) is recommended.
+
+- [copier](https://github.com/copier-org/copier)
+
+    Install copier in your python env as bellow.
+
+    ```sh
+    pip install copier
+    ```
+
+### Getting template
+
+1. Copy template.
+
+    ```sh
+    copier https://github.com/moguraion/copier-study /path/to/destination
+    ```
+
+2. Initializing template.
+
+    ```sh
+    cd /path/to/destination
+    make init
+    ```
+
+That's all!!
