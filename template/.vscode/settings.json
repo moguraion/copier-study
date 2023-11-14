@@ -3,10 +3,11 @@
     "editor.codeActionsOnSave": {
       "source.fixAll": true,
       "source.organizeImports": true
-    }
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnType": true,
   },
-  "python.formatting.provider": "black",
-  "python.linting.mypyEnabled": true,
+  "mypy-type-checker.importStrategy": "fromEnvironment",
   "python.analysis.extraPaths": ["src"],
   "python.autoComplete.extraPaths": ["src"],
   "editor.formatOnSave": true
